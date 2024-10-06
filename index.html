@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PE Activity Voter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guess the PE Activity!</h1>
+        
+        <p>Vote on what you think the activity is:</p>
+        <div class="options">
+            <button class="vote-btn" onclick="vote('Soccer')">Soccer</button>
+            <button class="vote-btn" onclick="vote('Basketball')">Basketball</button>
+            <button class="vote-btn" onclick="vote('Dodgeball')">Dodgeball</button>
+            <button class="vote-btn" onclick="vote('Yoga')">Yoga</button>
+        </div>
+
+        <h2>Live Voting Results:</h2>
+        <div id="results">
+            <p>Soccer: <span id="soccer-votes">0</span> votes</p>
+            <p>Basketball: <span id="basketball-votes">0</span> votes</p>
+            <p>Dodgeball: <span id="dodgeball-votes">0</span> votes</p>
+            <p>Yoga: <span id="yoga-votes">0</span> votes</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
